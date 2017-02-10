@@ -2,4 +2,8 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bed_details_card_text_padding">4dp</dimen>
+    <dimen name="bed_details_card_image_padding">8dp</dimen>
+    <dimen name="bed_details_card_text_size">20sp</dimen>
+    <dimen name="bed_details_card_text_margin">20dp</dimen>
 </resources>
