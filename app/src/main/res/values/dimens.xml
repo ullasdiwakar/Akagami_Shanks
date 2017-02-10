@@ -6,4 +6,6 @@
     <dimen name="bed_details_card_image_padding">8dp</dimen>
     <dimen name="bed_details_card_text_size">20sp</dimen>
     <dimen name="bed_details_card_text_margin">20dp</dimen>
+    <dimen name="card_elevation_resting">2dp</dimen>
+    <dimen name="appbar_elevation">4dp</dimen>
 </resources>
