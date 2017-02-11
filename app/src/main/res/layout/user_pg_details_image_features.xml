@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/userPGDetailsFeaturesCard"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="4dp"
+    android:elevation="@dimen/card_elevation_resting">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/userPGDetailsFeaturesCardImage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:padding="@dimen/features_card_image_padding"
+            android:layout_margin="@dimen/features_card_image_margin"
+            android:contentDescription="@string/features_card_image_desc"
+            android:src="@drawable/wifi"/>
+        <TextView
+            android:id="@+id/userPGDetailsFeaturesCardName"
+            android:layout_below="@id/userPGDetailsFeaturesCardImage"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/features_card_text_padding"
+            android:paddingRight="@dimen/features_card_text_padding"
+            android:paddingTop="@dimen/features_card_text_padding"
+            android:paddingBottom="@dimen/features_card_text_padding"
+            android:layout_marginLeft="@dimen/features_card_text_margin"
+            android:layout_marginStart="@dimen/features_card_text_margin"
+            android:textSize="@dimen/features_card_text_size"
+            android:textAlignment="center"
+            android:text="WiFi"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

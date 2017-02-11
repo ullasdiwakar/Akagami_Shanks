@@ -1,18 +1,13 @@
 package fujitora.kaigun_taisho.staysafe;
 
-import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 
 import com.bumptech.glide.Glide;
@@ -31,6 +26,9 @@ public class UserPGDetails extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.userPGDetailsToolBar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Nico Robin");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
 
@@ -38,7 +36,7 @@ public class UserPGDetails extends AppCompatActivity {
         list.setLayoutManager(layoutManager);
         sampleAdapter imagesAdapter=new sampleAdapter();
         list.setAdapter(imagesAdapter);
-        urls.add("https://www.google.co.in/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi65Pef_YXSAhVBRo8KHXXiDh8QjRwIBw&url=http%3A%2F%2Fmanga-reiatsu.blogspot.com%2F2014%2F05%2Fmonkey-d-luffy.html&psig=AFQjCNGEUz4NgqRJIaySNIDDDUboL_A9FA&ust=1486831532768374");
+        urls.add("https://firebasestorage.googleapis.com/v0/b/staysafe-2ab20.appspot.com/o/four.png?alt=media&token=94f8620b-2ad0-4644-8aa1-58aeb85cf785");
         urls.add("https://www.google.co.in/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwj--7-9_YXSAhWKQY8KHbgdD40QjRwIBw&url=https%3A%2F%2Fwww.pinterest.com%2Fvalgaav%2Froronoa-zoro%2F&bvm=bv.146496531,d.c2I&psig=AFQjCNHdfXKyFvDmrVA0Awlbo0HrELtunQ&ust=1486831593017875");
         urls.add("https://www.google.co.in/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjaqM3d_YXSAhVMQo8KHYwlDRgQjRwIBw&url=http%3A%2F%2Fsergiart.deviantart.com%2Fart%2FWanted-3-Nami-562421224&bvm=bv.146496531,d.c2I&psig=AFQjCNEF1oSTwecbFoeSdfs-WSA-vOfCyg&ust=1486831654761912");
         urls.add("https://www.google.co.in/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjw88_L_YXSAhXIpY8KHVfADl4QjRwIBw&url=http%3A%2F%2Fwww.designntrend.com%2Farticles%2F68191%2F20160112%2Fone-piece-chapter-812-how-strong-exactly-are-zoro-and-sanji.htm&bvm=bv.146496531,d.c2I&psig=AFQjCNE78EK5I9lrTLJccIBgamj2iIMJ0w&ust=1486831624813119");
@@ -61,7 +59,7 @@ public class UserPGDetails extends AppCompatActivity {
         @Override
         public void onBindViewHolder(sampleAdapter.ViewHolder holder, int position) {
           //  Log.v("inadapter",urls.get(position));
-            Glide.with(getApplicationContext()).load(R.drawable.asdf).into(holder.imageView);
+            Glide.with(getApplicationContext()).load(R.drawable.robin).into(holder.imageView);
 
 
         }
