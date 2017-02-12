@@ -1,3 +1,7 @@
 <resources>
+
     <string name="app_name">StaySafe</string>
+    <string name="title_activity_user_map">Map</string>
+    <string name="bed_card_image_desc">The Number of Beds</string>
+    <string name="features_card_image_desc">Name of the Feature</string>
 </resources>
