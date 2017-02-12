@@ -20,6 +20,7 @@ import android.content.Context;
 import android.graphics.Typeface;
 import android.text.style.CharacterStyle;
 import android.text.style.StyleSpan;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -227,6 +228,7 @@ class PlaceAutocompleteAdapter
             // Freeze the results immutable representation that can be stored safely.
             return DataBufferUtils.freezeAndClose(autocompletePredictions);
         }
+        Log.v("sdf","sd");
        // Log.e(TAG, "Google API client is not connected for autocomplete query.");
         return null;
     }
